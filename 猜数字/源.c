@@ -4,17 +4,17 @@
 #include<time.h>
 int input = 0;
 
-
+//123
 
 
 void menu()
 {
 	printf("********************************\n");
-	printf("******* ¡·°´1¿ªÊ¼ÓÎÏ·***********\n");
-	printf("******* ¡·°´0ÍË³öÓÎÏ·***********\n");
+	printf("******* ã€‹æŒ‰1å¼€å§‹æ¸¸æˆ***********\n");
+	printf("******* ã€‹æŒ‰0é€€å‡ºæ¸¸æˆ***********\n");
 	printf("********************************\n");
 	printf("********************************\n");
-	printf("************   ÇëÑ¡Ôñ   ********\n");
+	printf("************   è¯·é€‰æ‹©   ********\n");
 }
 
 void game()
@@ -23,11 +23,11 @@ void game()
 	int z = 5;
 	
 	srand((unsigned int)time(NULL));
-	int n = 0;//ÓÃ»§²ÂÊı×Ö
-	int r = rand() % 100 + 1;//ÈÃËæ»úÊıÊ¼ÖÕĞ¡ÓÚ100
+	int n = 0;//ç”¨æˆ·çŒœæ•°å­—
+	int r = rand() % 100 + 1;//è®©éšæœºæ•°å§‹ç»ˆå°äº100
 	while (z)
 	{
-		printf("Çë²ÂÊı×Ö\n");
+		printf("è¯·çŒœæ•°å­—\n");
 	
 
 		scanf("%d", &n);
@@ -37,13 +37,13 @@ void game()
 		else if (n < r) {
 			printf("small");
 			z--;
-			printf("»Ø´ğ´íÎó£¬Äã»¹ÓĞ %d ´Î»ú»á\n", z);
+			printf("å›ç­”é”™è¯¯ï¼Œä½ è¿˜æœ‰ %d æ¬¡æœºä¼š\n", z);
 		}
 
 		else if (n > r) {
 			printf("big");
 			z--;
-			printf("»Ø´ğ´íÎó£¬Äã»¹ÓĞ%d´Î»ú»á\n", z);
+			printf("å›ç­”é”™è¯¯ï¼Œä½ è¿˜æœ‰%dæ¬¡æœºä¼š\n", z);
 		}
 		
 		else
@@ -70,11 +70,11 @@ int main()
 		{
 		case 1:
 			
-			printf("²ÂÊı×Ö\n");
+			printf("çŒœæ•°å­—\n");
 			game();
 			break;
 		case 0:
-			printf("ÍË³ö\n");
+			printf("é€€å‡º\n");
 			break;
 		default:
 			printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
